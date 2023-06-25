@@ -1,0 +1,22 @@
+MICROSERVICES PROJECT
+
+
+Similar to Letterboxd
+
+
+Microservices - Reviewers, Films, Reviews
+
+DB Properties:
+
+Reviewers - reviewerid, firstname, lastname, username, emailid, reviewid, movieid
+
+Films - films info like filmid, movie name, director name, reviweid, reviewerid
+
+Reviews - reviewid, review, filmid, reviewerid
+
+
+
+
+User should be able to access reviews of people by accessing the movie
+
+
