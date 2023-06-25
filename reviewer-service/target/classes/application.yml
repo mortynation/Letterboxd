@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: REVIEWERS-SERVICE
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ReviewersService
+    username: postgres
+    password: Mortynation@24
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+
