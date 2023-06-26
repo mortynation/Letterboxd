@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: movies-service
+    name: MOVIES-SERVICE
   datasource:
     url: jdbc:postgresql://localhost:5432/MoviesService
     username: postgres
@@ -12,3 +12,14 @@ spring:
     hibernate:
       ddl-auto: update
     generate-ddl: true
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+
+

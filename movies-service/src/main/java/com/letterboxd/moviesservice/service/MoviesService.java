@@ -7,8 +7,11 @@ import com.letterboxd.moviesservice.repository.MoviesDatabase;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.List;
 
 @Service
 @Slf4j
@@ -25,14 +28,17 @@ public class MoviesService {
         return moviesDatabase.save(movie);
     }
 
-    public ResponseDTO getMovie(String movieName) {
+    public ResponseDTO getMovieReviews(String movieName) {
         log.info("Inside getMovie of MoviesService");
         ResponseDTO responseDTO = new ResponseDTO();
-        Movie movieDTO = moviesDatabase.getByMovieName(movieName);
-        ReviewerDTO reviewerDTO = restTemplate.getForObject("http://localhost:8080/reviewers/" +
-                movieDTO.getUserName(), ReviewerDTO.class);
+
+        Movie[] movieDTO = moviesDatabase.findByMovieName(movieName);
+        ReviewerDTO[] reviewerDTO = restTemplate.getForObject("http://REVIEWERS-SERVICE/reviewers/movie/" +
+                movieName, ReviewerDTO[].class);
+
         responseDTO.setMovieDTO(movieDTO);
         responseDTO.setReviewerDTO(reviewerDTO);
         return responseDTO;
+
     }
 }

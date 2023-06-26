@@ -23,8 +23,8 @@ public class MoviesController {
     }
 
     @GetMapping("/{movieName}")
-    public ResponseDTO getMovie(@PathVariable String movieName){
+    public ResponseDTO getMovieReviews(@PathVariable String movieName){
         log.info("Inside getMovie of MoviesController");
-        return moviesService.getMovie(movieName);
+        return moviesService.getMovieReviews(movieName);
     }
 }

@@ -5,13 +5,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 public class ResponseDTO {
 
-    private ReviewerDTO reviewerDTO;
-    private Movie movieDTO;
-
+    private Movie[] movieDTO;
+    private ReviewerDTO[] reviewerDTO;
 
 }
