@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29af1b85-7a37-4e47-931b-ccf15a4d7558" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../movies-service/src/main/java/com/letterboxd/moviesservice/entity/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../movies-service/src/main/java/com/letterboxd/moviesservice/entity/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movies-service/src/main/java/com/letterboxd/moviesservice/service/MoviesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../movies-service/src/main/java/com/letterboxd/moviesservice/service/MoviesService.java" afterDir="false" />
-    </list>
+    <list default="true" id="29af1b85-7a37-4e47-931b-ccf15a4d7558" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +32,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "cloud-gateway",
     "last_opened_file_path": "/Users/mortimer/vcs/github.com/morty/Letterboxd/reviewer-service",
     "spring.configuration.checksum": "46d430e1b41a3411f47e023286e8a570",
     "vue.rearranger.settings.migration": "true"
@@ -60,6 +57,7 @@
       <updated>1687663747262</updated>
       <workItem from="1687663748325" duration="47000" />
       <workItem from="1687727175069" duration="33000" />
+      <workItem from="1687960517909" duration="21000" />
     </task>
     <servers />
   </component>
